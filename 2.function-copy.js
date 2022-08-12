@@ -1,6 +1,6 @@
-/*************************
+/************************
 Problem 1:  radianToDegree 
-**************************/
+*************************/
 
 function radianToDegree(radian) {
     if (typeof radian != 'number') {
@@ -12,6 +12,8 @@ function radianToDegree(radian) {
     return result;
 }
 
+const inputDegree = radianToDegree(12);
+console.log(inputDegree);
 
 
 
@@ -27,6 +29,8 @@ function isJavaScriptFile(file) {
     return result;
 }
 
+const fileName = "assigment.js";
+console.log(isJavaScriptFile(fileName));
 
 
 
@@ -51,6 +55,8 @@ function oilPrice(dieselOil, petrolOil, octaneOil) {
     return totalOilPrice;
 }
 
+const totalOilCost = oilPrice(10, 8, 5);
+console.log(totalOilCost);
 
 
 
@@ -67,6 +73,7 @@ function publicBusFare(people) {
     return remainingPeople * 250;
 }
 
+console.log(publicBusFare(104));
 
 
 
@@ -85,6 +92,18 @@ function isBestFriend(bestFriends, justFriends) {
         return "Please Enter The Same Name";
     }
 }
+
+let friendsName1 = { name: 'ROBIn', friend: 'Akram' };
+let friendsName2 = { name: 'akram', friend: 'robin' };
+
+console.log(isBestFriend(friendsName1, friendsName2));
+
+
+
+
+
+
+
 
 
 
